@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" id="nhap" >
+<button type="button" onclick="In()">In</button>
+<p id="kq"></p>
+<script>
+    function In() {
+        let a = 0
+        let b = 1
+        let c= a + b
+        let tong=0
+        for (let i = 0; i < 19; i++) {
+            a = b;
+            b = c;
+            c=a+b;
+            tong+=a;
+            document.getElementById("kq").innerHTML="Tổng 20 số fibo đầu "+tong
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+        'header header header header header'
+        'sidebar-1 content content content sidebar-2'
+        'footer footer footer footer footer';
+            text-align: justify;
+            font-size: 30px;
+        }
+        .con {
+            display: none;
+            background-color: azure;
+            padding-left: 8px;
+        }
+         .mien{
+             float: right;
+             padding-right: 8px;
+         }
+
+        #header1 {
+            background: rgba(504,504,504,0.4);
+            grid-area: header;
+            font-family: "Book Antiqua";
+            color: crimson;
+        }
+        ul a:hover{
+            background:lavender;
+        }
+        .sidebar-1 a{
+            margin:20px;
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+        }
+         .cha {
+             background: none;
+             font-size: 20px;
+         }
+        .sidebar-2 {
+            padding: 5px;
+            grid-area: sidebar-2;
+            background-color: lavender;
+        }
+
+        .content {
+            margin: 0px;
+            padding: 10px;
+            grid-area: content;
+            background: rgba(504,504,504,0.2);
+        }
+
+        .footer {
+            padding: 5px;
+            grid-area: footer;
+            border: 1px dashed #AAA;
+        }
+    </style>
+</head>
+<body background=".idea/mon-an-truyen-thong-viet-nam4.jpg">
+
+<div class="grid-container">
+    <div id="header1">
+    <a class="grid-item" >
+        <marquee direction="right">Ẩm thực Việt Nam</marquee>
+    </a>
+    </div>
+<div class="grid-item sidebar-1">
+<ul>
+    <a  href="#">Trang chủ</a>
+    <a href="#">Giới thiệu</a>
+       <button class="cha">Ba miền
+            <i class="mien"></i>
+        </button>
+    <div class="con">
+      <a href="#">Miền Bắc</a>
+      <a href="#">Miền Trung</a>
+      <a href="#">Miền Nam</a>
+  </div>
+    <a href="#">Công thức</a>
+    <a href="#">Thế giới đó đây</a>
+</ul>
+</div>
+<div class="grid-item content">
+<a>
+    <h2>Cốm làng Vòng</h2>
+    <p>Cốm là món ăn dân dã nhưng rất hấp dẫn và tinh tế. Nhắc đến mùa thu là nghĩ ngay đến cốm, hương thơm phảng phất của cốm trong tiết trời se lạnh làm say lòng người. Ăn ốm phải ăn tưng chút một, nhâm nhi tách trà mới đúng kiểu.</p>
+    <p>Để taọ ra hạt cốm tưởng đơn giản nhưng thực lại gồm thật nhiều công đoạn.</p>
+    <p>Khi rang phải dùng chảo giang, rang trên bếp củi,đảo đều tay và liên tục phải canh để thóc chín vừa vặn.</p>
+    <p>Đặc biệt, khi giã phải giã cho đến khi ht cốm vừa đủ độ mềm, mỏng, thanh mảnh nhưng phải dẻo dai thì mới đạt tiêu chuẩn</p>
+    <p>Hạt cốm ngon phải mảnh, dẻo và mang được hương thơm thanh mát của đồng nội thì mới xứng danh cốm làng Vòng!</p>
+    <img src=".idea/com%20lang%20vong.jpg" width="500px" height="300px" >
+    <h2>Nem nướng Nha Trang</h2>
+    <p>Xiên nem vàng rộm, thơm phức, ăn kèm với các loại rau thơm và loại tương đắc trưng tạo nn sức hút kỳ lạ, khiến bất kỳ ai một lần hưởng thức đều nhớ mãi.</p>
+    <p>Nem nướng là món ăn dân dã, có nguồn gốc từ Ninh Hòa- huyện phía bắc Khánh Hòa.</p>
+    <p>Thành phần món ăn đơn giản, không cầu kỳ, bao gồm thịt lụi, bánh tráng, rau sống và tương chấm.Công thức làm món nem không khó tuy nhiên độ ngon của nem nướng cần sự kết hợp với nước tương đi kèm, đây cũng được coi là bí quyết riêng của mỗi quán, quyết định tới chất lượng cũng như độ ngon của món ăn.</p>
+    <p>Bát tương với hơn 20 loại gia vị theo bí quyết gia truyên: chút cay cay, ngọt ngọt,... quyện vào nhau thật hài hòa.</p>
+    <img src=".idea/anh4-nem-nuong-ninh-hoa-noi-tieng.jpg" width="500px" height="300px">
+    <h2>Bánh Tráng trộn</h2>
+    <p>Dưới vô vàn các loại món ăn đường phố thì bánh tráng trộn có lẽ vẫn là món ăn vặt được yêu thích của hầu hết các bạn trẻ bởi hương vị thơm ngon đặc biệt, đi cùng với đó là giá thành cực phải chăng</p>
+    <p>Truyền thuyết kể về nguồn gốc sự ra đời của bánh tráng cũng thật tình cờ. Câu chuyện xảy ra khi người chồng để quyên bánh tráng ngoài trời. Sau đó, dưới thời tiết sương xuống bánh tráng cũng thấm đẫm hơi sương, hai vợ chồng tiếc côn nên lấy về ăn và thấy rất ngon nên từ đó bánh tráng phơi sương được phát triển.</p>
+    <p>Trải qua bao năm tháng, qua bao bàn tay cũng những con người, món bánh tráng cũng được hoàn thiện: Một chút sa tế, muối tôm Tây Ninh, hành phi, rau thơm,xoài chua, lạc rang...Tất cả hòa quyện lại tạo nên hương vị thật đặc biệt làm say mê biết bao thế hệ trẻ</p>
+    <img src=".idea/maxresdefault.jpg" width="500px" height="300px">
+</a><br>
+</div>
+<div class="grid-item sidebar-2"><h1>Chuyên mục bạn đọc</h1>
+    <h2>Các món ăn ngon</h2>
+    Món ăn: <input id="inputmon" placeholder="Món ăn"><br>
+    Địa chỉ: <input id="inputchi" placeholder="Địa chỉ"><br>
+    Hình ảnh: <input id="inputanh" placeholder="Hình ảnh"><br>
+    <button onclick="them()">Thêm</button>
+    <h3>Danh sách</h3>
+    <table id="show" width="400"></table>
+</div>
+<div class="grid-item footer">footer
+ </div>
+
+</div>
+</body>
+</html>
+<script>
+    let names=[["Nem chua","Thanh Hóa","https://cdn.beptruong.edu.vn/wp-content/uploads/2018/05/cach-lam-nem-chua.jpg"]];
+              [["Canh cá","Quỳnh Côi-Thái Bình","http://sovhttdl.thaibinh.gov.vn/upload/80611/fck/files/765c920a072f2818c3aca543e7615865.jpg"]];
+    let danhshow=document.getElementById("show");
+    function show(){
+        let str= "";
+            for(let i=0;i<names.length;i++){
+                str += `<tr>
+                        <td>${names[i][0]}</td>
+                        <td>${names[i][1]}</td>
+                        <td><img src="${names[i][2]}" width="150" height="100"></td>
+                        <td><button onclick="sua(${i})">Sửa</button></td>
+                        <td><button onclick="xoa(${i})">Xóa</button></td>
+                    </tr>`
+            }
+        danhshow.innerHTML = str;
+    }
+    show();
+
+    function them(){
+        let mon=document.getElementById("inputmon").value;
+        let chi=document.getElementById("inputchi").value;
+        let anh=document.getElementById("inputanh").value;
+        names.push([mon,chi,anh]);
+        show();
+    }
+    function sua(index){
+        let mon=prompt("Nhập món muốn sửa");
+        let chi=prompt("Nhập  địa chỉ muốn sửa");
+        let anh=prompt("Nhập ảnh muốn sửa");
+        names.splice(index,1,[mon,chi,anh]);
+        show();
+    }
+    function xoa(index){
+        names.splice(index,1)
+        show();
+    }
+    var bamien= document.getElementsByClassName("cha");
+    var i;
+    for(i=0;i<bamien.length;i++){
+        bamien[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        })
+    }
+</script>

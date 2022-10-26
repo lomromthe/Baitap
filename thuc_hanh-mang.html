@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<body>
+<!--<input type="text" id="txtValue"/>-->
+<!--<input type="button" id="btnAdd" value="Add" onclick="add_element_to_array();"/>-->
+<!--<input type="button" id="btnDisplay" value="Display" onclick="display_array();"/>-->
+<!--<div id="result"></div>-->
+<!--<script>-->
+<!--let x = 0;-->
+<!--let array = Array();-->
+<!--function add_element_to_array() {-->
+<!--array[x] = document.getElementById("txtValue").value;-->
+<!--alert("Element: " + array[x] + " Added at index " + x);-->
+<!--x++;-->
+<!--document.getElementById("txtValue ").value = "";-->
+<!--}-->
+<!--function display_array() {-->
+<!--let e = "<hr/>";-->
+<!--for (let i = 0; i < array.length; i++) {-->
+<!--e += "Element " + i + " = " + array[i] + "<br/>";-->
+<!--}-->
+<!--document.getElementById("result").innerHTML = e;-->
+<!--}-->
+<!--</script>-->
+<!--//Đảo ngc phần từ mảng-->
+<!--<script>-->
+<!--let x = [-3, 5, 1, 3, 2, 10];-->
+<!--let first = 0;-->
+<!--let last = x.length - 1;-->
+<!--while (first < last) {-->
+<!--    let b = x[first];-->
+<!--    x[first] = x[last];-->
+<!--    x[last] = b;-->
+<!--    first++;-->
+<!--    last&#45;&#45;;-->
+<!--}-->
+<!--document.write(x);-->
+<!--</script>-->
+<!--<script>-->
+<!--    let x=+prompt("Nhập giá trị");-->
+<!--    let mang=[1,4,6,7,99,0,23,-4,8];-->
+<!--    for(let i=0;i<mang.length;i++){-->
+<!--        if(x==mang[i]){-->
+<!--            alert("x có trong mảng:" + mang[i] + ". Ở vị trí: "+i)-->
+<!--        }else{alert("x không có trong mảng")}-->
+<!--    }-->
+<!--</script>-->
+<!--//bai tập từ điển-->
+<input type="text" id="tu" placeholder="Nhập từ">
+<button type="button" onclick="dich()">Dịch</button>
+<p id="kq"></p>
+<script>
+    function dich() {
+        let anh = ["apple", "banana"];
+        let viet = ["táo", "chuối"];
+        let nhap = document.getElementById("tu");
+        for(let i=0;i<=anh.length;i++){
+            if(nhap === anh[i]){
+               document.getElementById("kq").innerHTML="Ngĩa là:"+ viet[i];
+            }else{
+                document.getElementById("kq").innerHTML="Không có trong từ điển"
+            }
+        }
+
+    }
+</script>
+</body>
+</body>
+</html>
